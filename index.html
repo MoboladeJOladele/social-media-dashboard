@@ -1,79 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Joey - Kora Labs">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Social Media Dashboard Page for Nathan F.">
-  
-  <script src="/assets/scripts/set_preferred_theme.js"></script>
-  <script src="/assets/scripts/toggle_theme.js" defer></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/assets/styles/main.css">
-  <link rel="canonical" href="https://dark-lightdashboard.pages.dev/">
-  <title>Social Media Dashboard - Nathan F.</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Joey - Kora Labs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Nathan F.'s social media dashboard to view follower growth, engagement trends, and platform performance across Facebook, Twitter, Instagram, and YouTube."
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://social-dashboard-app.pages.dev/"
+    />
+    <meta property="og:title" content="Social Media Dashboard | Nathan F." />
+    <meta
+      property="og:description"
+      content="Track social media growth and engagement across Facebook, Twitter, Instagram, and YouTube in a clean, responsive dashboard."
+    />
+    <meta
+      property="og:image"
+      content="https://social-dashboard-app.pages.dev/assets/images/og-image.png"
+    />
+    <meta property="og:site_name" content="Nathan F. Dashboard" />
 
-<body>
-  <div class="wrapper">
-    <div class="content">
-      <main>
-        <div class="top">
-          <div>
-            <h1 class="page-title">Social Media Dashboard</h1>
-            <p>Total Followers: 23,004</p>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Social Media Dashboard | Nathan F." />
+    <meta
+      name="twitter:description"
+      content="Track social media growth and engagement across Facebook, Twitter, Instagram, and YouTube in a clean, responsive dashboard."
+    />
+    <meta
+      name="twitter:image"
+      content="https://social-dashboard-app.pages.dev/assets/images/og-image.png"
+    />
+
+    <script src="/assets/scripts/set_preferred_theme.js"></script>
+    <script src="/assets/scripts/toggle_theme.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link
+      rel="canonical"
+      href="https://social-dashboard-app.pages.dev/"
+    />
+    <title>Social Media Dashboard - Nathan F.</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <main>
+          <div class="top">
+            <div>
+              <h1 class="page-title">Social Media Dashboard</h1>
+              <p>Total Followers: 23,004</p>
+            </div>
+            <figure>
+              <form name="toggle" aria-label="Website Color Theme Toggle">
+                <label for="dark-mode">Dark Mode</label>
+                <label for="light-mode" class="visually-hidden"
+                  >Light Mode</label
+                >
+                <span>
+                  <input
+                    type="radio"
+                    name="toggle_buttons"
+                    id="dark-mode"
+                    value="dark"
+                  />
+                  <input
+                    type="radio"
+                    name="toggle_buttons"
+                    id="light-mode"
+                    value="light"
+                  />
+                </span>
+              </form>
+            </figure>
           </div>
-          <figure>
-            <form name="toggle" aria-label="Website Color Theme Toggle">
-              <label for="dark-mode">Dark Mode</label>
-              <label for="light-mode" class="visually-hidden">Light Mode</label>
-              <span>
-                <input type="radio" name="toggle_buttons" id="dark-mode" value="dark">
-                <input type="radio" name="toggle_buttons" id="light-mode" value="light">
-              </span>
-            </form>
-          </figure>
-        </div>
 
-        <div class="widgets">
-          <!-- Facebook -->
-          <div class="widget facebook-analytics">
-            <div class="facebook-profile">
-              <span class="icon facebook-logo"></span>
-              <span class="user-handle">@nathanf</span>
+          <div class="widgets">
+            <!-- Facebook -->
+            <div class="widget facebook-analytics">
+              <div class="facebook-profile">
+                <span class="icon facebook-logo"></span>
+                <span class="user-handle">@nathanf</span>
+              </div>
+              <div class="current-followers">
+                <span class="amount">1987</span>
+                Followers
+              </div>
+              <div class="trends trend-up">
+                <span class="icon green-arrow"></span>
+                12 Today
+              </div>
             </div>
-            <div class="current-followers">
-              <span class="amount">1987</span>
-              Followers
-            </div>
-            <div class="trends trend-up">
-              <span class="icon green-arrow"></span>
-              12 Today
-            </div>
-          </div>
-          <!-- Twitter -->
-          <div class="widget twitter-analytics">
+            <!-- Twitter -->
+            <div class="widget twitter-analytics">
               <div class="twitter-profile">
-              <span class="icon twitter-logo"></span>
-              <span class="user-handle">@nathanf</span>
+                <span class="icon twitter-logo"></span>
+                <span class="user-handle">@nathanf</span>
+              </div>
+              <div class="current-followers">
+                <span class="amount">1044</span>
+                Followers
+              </div>
+              <div class="trends trend-up">
+                <span class="icon green-arrow"></span>
+                99 Today
+              </div>
             </div>
-            <div class="current-followers">
-              <span class="amount">1044</span>
-              Followers
-            </div>
-            <div class="trends trend-up">
-              <span class="icon green-arrow"></span>
-              99 Today
-            </div>
-          </div>
-          <!-- IG -->
-          <div class="widget instagram-analytics">
+            <!-- IG -->
+            <div class="widget instagram-analytics">
               <div class="instagram-profile">
                 <span class="icon instagram-logo"></span>
                 <span class="user-handle">@realnathanf</span>
@@ -86,132 +141,120 @@
                 <span class="icon green-arrow"></span>
                 1099 Today
               </div>
-          </div>
-          <!-- Youtube -->
-          <div class="widget youtube-analytics">
-            <div class="youtube-profile">
-              <span class="icon youtube-logo"></span>
-              <span class="user-handle">Nathan F.</span>
             </div>
-            <div class="current-followers">
-              <span class="amount">8239</span>
-              Subscribers
-            </div>
-            <div class="trends trend-down">
-              <span class="icon red-arrow"></span>
-              144 Today
-            </div>
-          </div>
-        </div>
-        <div class="overview-today">
-          <h2>Overview - Today</h2>
-          <div class="widgets">
-            <!-- Page Views -->
-            <div class="widget">
-              <span class="widget-title">
-                Page Views
-              </span>
-              <span class="icon facebook-logo"></span>
-              <span class="quantity">87</span>
-              <div class="trends trend-up">
-                <span class="icon green-arrow"></span>
-                3%
+            <!-- Youtube -->
+            <div class="widget youtube-analytics">
+              <div class="youtube-profile">
+                <span class="icon youtube-logo"></span>
+                <span class="user-handle">Nathan F.</span>
               </div>
-            </div>
-            <!-- Likes -->
-            <div class="widget">
-              <span class="widget-title">
-                Likes
-              </span>
-              <span class="icon facebook-logo"></span>
-              <span class="quantity">52</span>
+              <div class="current-followers">
+                <span class="amount">8239</span>
+                Subscribers
+              </div>
               <div class="trends trend-down">
                 <span class="icon red-arrow"></span>
-                2%
-              </div>
-            </div>
-            <!-- Likes -->
-            <div class="widget">
-              <span class="widget-title">
-                Likes
-              </span>
-              <span class="icon instagram-logo"></span>
-              <span class="quantity">5462</span>
-              <div class="trends trend-up">
-                <span class="icon green-arrow"></span>
-                2257%
-              </div>
-            </div>
-            <!-- Profile Views -->
-            <div class="widget">
-              <span class="widget-title">
-                Profile Views
-              </span>
-              <span class="icon instagram-logo"></span>
-              <span class="quantity">52k</span>
-              <div class="trends trend-up">
-                <span class="icon green-arrow"></span>
-                1375%
-              </div>
-            </div>
-            <!-- Retweets -->
-            <div class="widget">
-              <span class="widget-title">
-                Retweets
-              </span>
-              <span class="icon twitter-logo"></span>
-              <span class="quantity">117</span>
-              <div class="trends trend-up">
-                <span class="icon green-arrow"></span>
-                303%
-              </div>
-            </div>
-            <!-- Likes -->
-            <div class="widget">
-              <span class="widget-title">
-                Likes
-              </span>
-              <span class="icon twitter-logo"></span>
-              <span class="quantity">507</span>
-              <div class="trends trend-up">
-                <span class="icon green-arrow"></span>
-                553%
-              </div>
-            </div>
-            <!-- Likes -->
-            <div class="widget">
-              <span class="widget-title">
-                Likes
-              </span>
-              <span class="icon youtube-logo"></span>
-              <span class="quantity">107</span>
-              <div class="trends trend-down">
-                <span class="icon red-arrow"></span>
-                19%
-              </div>
-            </div>
-            <!-- Total Views -->
-            <div class="widget">
-              <span class="widget-title">
-                Total Views
-              </span>
-              <span class="icon youtube-logo"></span>
-              <span class="quantity">1407</span>
-              <div class="trends trend-down">
-                <span class="icon red-arrow"></span>
-                12%
+                144 Today
               </div>
             </div>
           </div>
-        </div>
-      </main>
-      <footer>
-        <div class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="#">Kora Labs</a>.
-        </div>
-      </footer>
+          <div class="overview-today">
+            <h2>Overview - Today</h2>
+            <div class="widgets">
+              <!-- Page Views -->
+              <div class="widget">
+                <span class="widget-title"> Page Views </span>
+                <span class="icon facebook-logo"></span>
+                <span class="quantity">87</span>
+                <div class="trends trend-up">
+                  <span class="icon green-arrow"></span>
+                  3%
+                </div>
+              </div>
+              <!-- Likes -->
+              <div class="widget">
+                <span class="widget-title"> Likes </span>
+                <span class="icon facebook-logo"></span>
+                <span class="quantity">52</span>
+                <div class="trends trend-down">
+                  <span class="icon red-arrow"></span>
+                  2%
+                </div>
+              </div>
+              <!-- Likes -->
+              <div class="widget">
+                <span class="widget-title"> Likes </span>
+                <span class="icon instagram-logo"></span>
+                <span class="quantity">5462</span>
+                <div class="trends trend-up">
+                  <span class="icon green-arrow"></span>
+                  2257%
+                </div>
+              </div>
+              <!-- Profile Views -->
+              <div class="widget">
+                <span class="widget-title"> Profile Views </span>
+                <span class="icon instagram-logo"></span>
+                <span class="quantity">52k</span>
+                <div class="trends trend-up">
+                  <span class="icon green-arrow"></span>
+                  1375%
+                </div>
+              </div>
+              <!-- Retweets -->
+              <div class="widget">
+                <span class="widget-title"> Retweets </span>
+                <span class="icon twitter-logo"></span>
+                <span class="quantity">117</span>
+                <div class="trends trend-up">
+                  <span class="icon green-arrow"></span>
+                  303%
+                </div>
+              </div>
+              <!-- Likes -->
+              <div class="widget">
+                <span class="widget-title"> Likes </span>
+                <span class="icon twitter-logo"></span>
+                <span class="quantity">507</span>
+                <div class="trends trend-up">
+                  <span class="icon green-arrow"></span>
+                  553%
+                </div>
+              </div>
+              <!-- Likes -->
+              <div class="widget">
+                <span class="widget-title"> Likes </span>
+                <span class="icon youtube-logo"></span>
+                <span class="quantity">107</span>
+                <div class="trends trend-down">
+                  <span class="icon red-arrow"></span>
+                  19%
+                </div>
+              </div>
+              <!-- Total Views -->
+              <div class="widget">
+                <span class="widget-title"> Total Views </span>
+                <span class="icon youtube-logo"></span>
+                <span class="quantity">1407</span>
+                <div class="trends trend-down">
+                  <span class="icon red-arrow"></span>
+                  12%
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Kora Labs</a>.
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
